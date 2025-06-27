@@ -1,0 +1,86 @@
+
+/* project4.css - Using your provided color palette */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #2E2E3A;
+    color: #EEF0EF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #EEF0EF;
+    padding: 40px 50px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    width: 400px;
+    color: #2E2E3A;
+}
+
+.text h2 {
+    font-size: 28px;
+    margin-bottom: 16px;
+    color: #7F8CAA;
+}
+
+.text2 h3 {
+    font-size: 16px;
+    color: #2E2E3A;
+    margin-bottom: 8px;
+}
+
+.text3 {
+    margin-top: 24px;
+}
+
+.text3 label h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #2E2E3A;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 80%;
+    border: 2px solid #B8CFCE;
+    background-color: #EEF0EF;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    color: #2E2E3A;
+}
+
+button.submit {
+    background-color: #7F8CAA;
+    color: #EEF0EF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button.submit:hover {
+    background-color: #B8CFCE;
+    color: #2E2E3A;
+}
+
+.guesses {
+    margin-top: 24px;
+}
+
+.guesses h4 {
+    margin: 8px 0;
+    color: #2E2E3A;
+}

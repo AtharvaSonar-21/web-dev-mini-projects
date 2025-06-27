@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BMI Calculator</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: sans-serif;
+      background: #f3f3f3;
+    }
+    .calculator {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ccc;
+      text-align: center;
+    }
+    input {
+      margin: 5px;
+      padding: 5px;
+    }
+    #Results {
+      margin-top: 15px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <h1>BMI Calculator</h1>
+    <form id="bmiForm">
+      <p><label>Height in Centimeter: </label><input id="height" type="text" /></p>
+      <p><label>Weight in Kg: </label><input id="weight" type="text" /></p>
+      <button type="submit">Calculate</button>
+    </form>
+    <div id="Results"></div>
+  </div>
+
+  <script>
+    const form = document.getElementById('bmiForm');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const height = parseFloat(document.getElementById('height').value);
+      const weight = parseFloat(document.getElementById('weight').value);
+      const result = document.getElementById('Results');
+
+      if (isNaN(height) || height <= 0) {
+        result.textContent = '❌ Please enter a valid height in centimeters.';
+      } else if (isNaN(weight) || weight <= 0) {
+        result.textContent = '❌ Please enter a valid weight in kilograms.';
+      } else {
+        const bmi = (weight / ((height / 100) ** 2)).toFixed(2);
+        result.textContent = `✅ Your BMI is: ${bmi}`;
+      }
+    });
+  </script>
+</body>
+</html>
