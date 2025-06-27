@@ -30,5 +30,8 @@ Each folder contains:
    git clone https://github.com/AtharvaSonar-21/web-dev-mini-projects.git
    cd web-dev-mini-projects
 
+---
+
+**About Me**
 
 Maintainer: Atharva Sonar
