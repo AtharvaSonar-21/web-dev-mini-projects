@@ -16,10 +16,10 @@ Each folder contains:
 
 | Project                          | Description                                    | Technologies           | 
 |----------------------------------|------------------------------------------------|------------------------|
-| **BMI Calculator**              | Calculate BMI using form inputs                | HTML, CSS, JS          |        |
+| **BMI Calculator**              | Calculate BMI using form inputs                | HTML, CSS, JS          |        
 | **Quiz Game**                   | Multiple-choice quiz with score tracking       | HTML, CSS, JS          |
 | **Weather Watch**               | Fetch weather info via API                     | HTML, CSS, JS, Fetch API |
-| *(Add more projects...)*       |                                                |                        | 
+| **Expense calculator**          | Draggable calculator with note history         | HTML, CSS, JS            | 
 
 ---
 
