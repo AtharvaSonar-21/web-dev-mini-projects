@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker with calculator App</applet></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background">
+        <h1 id="text">change the position of this calculator when lock <br>
+            on this page <br>
+            <button id = "toggle-drag">🔒 Lock</button>
+
+            
+        </h1>
+
+
+        <div class="main" id="drag">
+        
+        <div class="display">
+            <h1>Calculator App</h1>
+            <!-- <input id="input" type="text" readonly> -->
+            <textarea  readonly id="calc-display" rows="4"></textarea>
+            <input id ="input" type="text" placeholder="Enter Your Expense">
+        </div>
+        <div class="input">
+            <div class="buttons">
+        <button id = "btn"data-value="sin(">sin</button>
+        <button id = "btn"data-value="cos">cos</button>
+        <button id = "btn"data-value="tan">tan</button>
+        <button id = "btn"data-value="log">log</button>
+        <button id = "btn"data-value="sqrt">√</button>
+        <button id = "btn"data-value="^">^</button>
+        <button id = "btn"data-value="(">(</button>
+        <button id = "btn"data-value=")">)</button>
+
+
+    <!-- Row 1 -->
+        <button id = "btn-short" class="reset" data-value="C">AC</button>
+        <button id = "btn" class="divide" data-value="/">÷</button>
+        <button id = "btn" class="multiply" data-value="*">×</button>
+        <button id = "btn" class="point" data-value=".">.</button>
+
+    <!-- Row 2 -->
+        <button id = "btn" class="nums" data-value="7">7</button>
+        <button id = "btn" class="nums" data-value="8">8</button>
+        <button id = "btn" class="nums" data-value="9">9</button>
+        <button  id = "btn" class="sub" data-value="-">−</button>
+
+    <!-- Row 3 -->
+        <button id = "btn" class="nums" data-value="4">4</button>
+        <button id = "btn"class="nums" data-value="5">5</button>
+        <button id = "btn" class="nums" data-value="6">6</button>
+        <button id = "btn" class="add" data-value="+">+</button>
+
+    <!-- Row 4 -->
+        <button id = "btn" class = "nums" data-value="1">1</button>
+        <button id = "btn" class="nums" data-value="2">2</button>
+        <button id = "btn" class="nums" data-value="3">3</button>
+        <button id = "btn-short" class="equal" data-value="=">=</button>
+
+    <!-- Row 5 -->
+        <button id = "btn" class="zero" data-value="0">0</button>
+        <button id = "submit" class="zero" data-value=""><b><h3>submit</h3></b></button>
+
+        </div>
+        
+        </div>
+        </div>
+        <div class="History">
+            <button id="show-history"> Show History</button>
+            <button id="delete-history">Delete history</button>
+            <input id = "date" type="date">
+
+            <div id="actual-history">
+                <b>History according to the Date</b>
+                <ul id="list-history">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjs@11.11.0/lib/browser/math.js"></script>
+
+</body>
+</html>

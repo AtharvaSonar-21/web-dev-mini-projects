@@ -1,0 +1,122 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height:100%;
+    width: 100%;
+}
+
+.main{
+    width:220px;
+    margin: 50px auto;
+    background-color: #393E46;
+    border: 5px;
+    border-radius: 20px;
+    color: #00ADB5;
+    
+}
+.main button{
+    height: 50px;
+    width: 50px;
+}
+.main input{
+
+    height: 50px;
+    width: 30vh;
+    
+    object-fit:cover;
+
+}
+.buttons{
+    margin: 2px;
+    padding: auto;
+    border : 5px rgb(213, 237, 202);
+}
+#drag {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  cursor: move;
+}
+
+#text{
+    display: flex;
+    position: absolute;
+    color:#EEEEEE;
+    top : 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#btn{
+    background-color: #222831 ;
+    border-radius: 25px;
+    color : #00ADB5;
+
+
+}
+
+#submit{
+    background-color: #00ADB5 ;
+    border-radius: 25px;
+    color : #222831;
+    width: 100px;
+}
+#btn-short{
+    background-color: #00ADB5 ;
+    border-radius: 25px;
+    color : #222831;
+    width: 50px;
+}
+
+.display input {
+  overflow-x: auto;
+  white-space: nowrap;
+   background-color: #222831 ;
+    border-radius: 25px;
+    color :#EEEEEE;
+    font-size: 20px ;
+
+}
+#calc-display {
+  width:27vh;
+  margin: 10px;
+  overflow-y: hidden;
+  font-size: 24px;
+  resize: none;
+  overflow: hidden;
+  padding: 10px;
+  background-color: #222831;
+  color: #EEEEEE;
+  border: none;
+  border-radius: 25px;
+}
+
+ 
+
+#toggle-drag{
+    background-color: #00ADB5 ;
+    border-radius: 25px;
+    color : #222831;
+    width: 50px;
+    height: 50px;
+    
+}
+.background{
+    height: 100%;
+    width : 100%;
+    background-color: #222831;
+    display: flex;
+    
+}
+
+#actual-history{
+    background-color: #00ADB5;
+    border-radius: 50px;
+    display: flex;
+    padding: 5%;
+    margin : 2%;
+        
+}
